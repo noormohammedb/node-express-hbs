@@ -12,3 +12,13 @@
 <p>
    {{comment.comment1.comment_date}}
 </p>
+
+<h3> {{admin.heading}} </h3>
+
+<p>
+   {{#if admin.auth}}
+   you are admin
+   {{else}}
+   you are not admin
+   {{/if}}
+</p>
