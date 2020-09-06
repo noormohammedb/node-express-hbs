@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', (req,res,next) => {
+  let hbsObject = {heading: 'this is heading', items: ['apple','mango'], footer: 'footer lorem', title: 'index-page'};
+  res.render('index', hbsObject);
 });
 
 module.exports = router;

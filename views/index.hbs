@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h3> {{heading}} </h3>
+
+<ul>
+   {{#each items}}
+
+      <li> {{@index}}.   {{this}} </li>
+
+   {{/each}}
+</ul>
+
+<h5> {{footer}} </h5>
