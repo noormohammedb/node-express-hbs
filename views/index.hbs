@@ -1,11 +1,14 @@
 <h3> {{heading}} </h3>
 
 <ul>
-   {{#each items}}
+   {{#each hbsObject.items}}
 
       <li> {{@index}}.   {{this}} </li>
 
    {{/each}}
 </ul>
 
-<h5> {{footer}} </h5>
+<h5> {{comment.comment1.comment_data}} </h5>
+<p>
+   {{comment.comment1.comment_date}}
+</p>
